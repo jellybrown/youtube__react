@@ -1,24 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Card extends Component {
-    
-      
-    
+const Card = ({ card, card: { snippet }, onVideoClick }) => (
+        <li className="card" onClick={() => onVideoClick(card)}>
+            <a href="#a" >
+                <img src={snippet.thumbnails.default.url} alt="" className="thum_img"/>
+                <div className="card_contents">
+                  <span className="title">{snippet.title}</span>
+                    <p className="author">{snippet.channelTitle}</p>
+                </div>
+            </a>
+        </li>
+     );
 
-    render() {
-        
-        return (
-           <li className="card">
-               <a href="#a">
-                   <img src={this.props.card.thumbnails.default.url} alt="" className="thum_img"/>
-                   <div className="card_contents">
-                     <span className="title">{this.props.card.title}</span>
-                       <p className="desc">{this.props.card.description}</p>
-                   </div>
-               </a>
-           </li>
-        );
-    }
-}
 
 export default Card;

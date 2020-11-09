@@ -35,9 +35,9 @@ class Header extends Component {
                     </a>
                 </h1>
                 <form className="search_header">
-                    <input ref={this.inputRef} type="search" id="search_form" onClick={this.onClick} onKeyPress={this.onKeyPress}/>
+                    <input ref={this.inputRef} type="search" id="search_form" />
                     <label htmlFor="search_form"></label>
-                    <button type="submit" className="search_btn"><img src="./images/search.png" alt="search icon"/></button>
+                    <button type="submit" className="search_btn" onClick={this.onClick} onKeyPress={this.onKeyPress}><img src="./images/search.png" alt="search icon"/></button>
                </form>
             </header>
         );

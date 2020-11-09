@@ -112,15 +112,31 @@ header .name {
   opacity: 0.9;
 }
 .card_contents {
-  padding: 10px 0;
+  padding: 5px 5px 5px 0;
   width: 70%;
   height: 70%;
   overflow: hidden;
   box-sizing: border-box;
 }
 .card_contents .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .card_contents .desc {
+}
+
+/* detail */
+.pages {
+  display: flex;
+}
+.detail_video {
+  flex: 1 1 70%;
+}
+
+.card_list_app {
+  flex: 1 1 30%;
+}
+
+.detail_page {
+  padding: 15px 15px 0 0;
 }
